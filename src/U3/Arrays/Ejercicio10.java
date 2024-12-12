@@ -37,6 +37,6 @@ public class Ejercicio10 {
             System.out.print(tabla[i] + " ");
         }
 
-        System.out.println("\nCantidad de impares desechados: " + impares);
+        System.out.println("Cantidad de impares desechados: " + impares);
     }
 }
