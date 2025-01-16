@@ -14,7 +14,7 @@ public class ejercicio11 {
         } else {
             for (int i = 0; i < altura; i++) {
                 for (int j = 0; j < altura; j++) {
-                    if (i == j || i + j == altura - 1) {
+                    if (i == j || i + j == altura -1) {
                         System.out.print("*");
                     } else {
                         System.out.print(" ");
