@@ -2,21 +2,23 @@
 
 package U1.Tarea5;
 import java.util.Scanner;
-public class ejercicio3 {public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+public class ejercicio3 {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce un número: ");
+        int numero = scanner.nextInt();
 
-    System.out.print("Escribe un numero: ");
-    int numero = scanner.nextInt();
+        if (esImpar(numero)) {
+            System.out.println("El número es impar.");
+        } else {
+            System.out.println("El número no es impar.");
+        }
 
-
-    if (numero %2 == 0){
-        System.out.println("El número es par.");
-    } else{
-        System.out.println("El número no es par.");
+        scanner.close();
     }
 
-
-}
-
+    public static boolean esImpar(int numero) {
+        return numero % 2 != 0;
+    }
 }
